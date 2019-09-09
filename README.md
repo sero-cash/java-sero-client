@@ -1,15 +1,25 @@
 # java-sero-client
 Java client utils for SERO
 
+* Usage
+```
+import org.sero.client;
+
+SeroClient.pkrValid("hPfwD5 ...... DQB2r9");
+SeroClient.pkValid("4bbE4n ...... JAe1jwq");
+
+```
 
 * Run the test
 
-```sh
--Dlibpath=so-file-fullpath
+For run the `java-sero-client` must specify env variable `libpath` by `-Dlibpath=so-file-fullpath`.
 
+the `so-file-fullpath` must absolute path.
+
+```sh
 java -Dlibpath=your-so-file-fullpath TestSeroClient.class
 ```
-the `so-file-fullpath` must absolute path.
+
 
 * `.so` file in the `java-sero-client/lib` PATH：
 
